@@ -1,13 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: helloworld
-  namespcae: default
+  name: argocd-helloworld
   labels:
-    name: helloworld
+    name: argocd-helloworld
 spec:
   containers:
-  - name: helloworld
+  - name: argocd-helloworld
     image: nginx
     resources:
       limits:

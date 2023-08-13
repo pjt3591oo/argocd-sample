@@ -1,11 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: helloworld
-  namespcae: default
+  name: argocd-helloworld
 spec:
   selector:
-    app: helloworld
+    app: argocd-helloworld
   ports:
   - port: 80
     targetPort: 80
